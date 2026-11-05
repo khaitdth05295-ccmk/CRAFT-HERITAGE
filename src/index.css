@@ -1,0 +1,234 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --paper-bg: #f4efe4;
+    --paper-content: #fcf9f2;
+    --wood-dark: #3e220f;
+    --wood-main: #543118;
+    --wood-light: #7a4b27;
+    --gold-antique: #b8860b;
+    --gold-light: #d4af37;
+    --red-brick: #8b2500;
+    --green-moss: #2e5927;
+    --border-classic: #6b4423;
+    --border-subtle: #d3c4ad;
+  }
+
+  body {
+    background-color: var(--paper-bg);
+    color: #2b1d14;
+    font-family: 'Times New Roman', Times, Georgia, serif;
+    background-image: 
+      radial-gradient(#e2d5c1 1px, transparent 1px),
+      radial-gradient(#e8ddcc 1px, #f4efe4 1px);
+    background-size: 24px 24px;
+    background-position: 0 0, 12px 12px;
+  }
+}
+
+/* Classical 1995-1999 Web Archive & Museum styling classes */
+.font-sans-ui {
+  font-family: Arial, Tahoma, Helvetica, sans-serif;
+}
+
+.font-serif-doc {
+  font-family: 'Times New Roman', Times, serif;
+}
+
+/* Classic retro beveled buttons & frames */
+.retro-frame {
+  background-color: #fcf9f2;
+  border: 2px solid #543118;
+  box-shadow: 2px 2px 0px #2b1d14;
+}
+
+.retro-frame-double {
+  background-color: #fdfbf7;
+  border: 4px double #543118;
+}
+
+.retro-header-bar {
+  background: linear-gradient(180deg, #663b1d 0%, #44240e 100%);
+  color: #fff9ed;
+  border-bottom: 2px solid #2b1d14;
+  text-shadow: 1px 1px 1px #000;
+}
+
+.retro-sub-bar {
+  background-color: #e5dac6;
+  border-bottom: 1px solid #7a4b27;
+  border-top: 1px solid #fff;
+  color: #3e220f;
+}
+
+.retro-btn {
+  font-family: Arial, Tahoma, sans-serif;
+  background: linear-gradient(180deg, #f7f1e5 0%, #dfd3bd 100%);
+  border: 2px solid;
+  border-color: #faf5ed #663b1d #543118 #f5ebd7;
+  color: #381f0d;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 1px 1px 0px #2b1d14;
+  transition: all 0.05s ease;
+}
+
+.retro-btn:hover {
+  background: linear-gradient(180deg, #ffffff 0%, #e8dcbf 100%);
+}
+
+.retro-btn:active {
+  background: #d5c6ab;
+  border-color: #543118 #faf5ed #f5ebd7 #663b1d;
+  box-shadow: inset 1px 1px 2px rgba(0,0,0,0.3);
+  transform: translate(1px, 1px);
+}
+
+.retro-btn-primary {
+  font-family: Arial, Tahoma, sans-serif;
+  background: linear-gradient(180deg, #8b2500 0%, #681800 100%);
+  border: 2px solid;
+  border-color: #c94f28 #380d00 #380d00 #c94f28;
+  color: #fffaf0;
+  font-weight: bold;
+  box-shadow: 1px 1px 0px #1a0600;
+}
+
+.retro-btn-primary:hover {
+  background: linear-gradient(180deg, #a32f05 0%, #7d2002 100%);
+}
+
+.retro-btn-primary:active {
+  background: #501300;
+  border-color: #380d00 #c94f28 #c94f28 #380d00;
+  transform: translate(1px, 1px);
+}
+
+.retro-btn-wood {
+  font-family: Arial, Tahoma, sans-serif;
+  background: linear-gradient(180deg, #5c3818 0%, #3a200a 100%);
+  border: 2px solid;
+  border-color: #8c5a2c #201004 #201004 #8c5a2c;
+  color: #fff9eb;
+  font-weight: bold;
+  box-shadow: 1px 1px 0px #110802;
+}
+
+.retro-btn-wood:hover {
+  background: linear-gradient(180deg, #70451f 0%, #46260e 100%);
+}
+
+.retro-input {
+  font-family: Arial, Tahoma, sans-serif;
+  background-color: #ffffff;
+  border: 2px inset #7a4b27;
+  color: #1a0f08;
+  padding: 6px 10px;
+  outline: none;
+}
+
+.retro-input:focus {
+  border-color: #8b2500;
+  background-color: #fffef9;
+}
+
+.retro-table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 2px solid #543118;
+  background-color: #ffffff;
+}
+
+.retro-table th {
+  background-color: #4a2810;
+  color: #fffaf0;
+  font-family: Arial, Tahoma, sans-serif;
+  font-size: 0.875rem;
+  padding: 8px 10px;
+  border: 1px solid #734520;
+  text-align: left;
+}
+
+.retro-table td {
+  padding: 8px 10px;
+  border: 1px solid #cdbfa8;
+  font-size: 0.925rem;
+}
+
+.retro-table tr:nth-child(even) {
+  background-color: #f9f5ec;
+}
+
+.retro-table tr:hover {
+  background-color: #f2e8d3;
+}
+
+/* Vintage status badges */
+.stamp-badge {
+  font-family: Arial, Tahoma, sans-serif;
+  font-size: 0.75rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 3px 8px;
+  border: 1px solid;
+  display: inline-block;
+  letter-spacing: 0.5px;
+}
+
+.stamp-verified {
+  background-color: #eaf2e8;
+  color: #1b4d16;
+  border-color: #2e5927;
+}
+
+.stamp-pending {
+  background-color: #fbf5e6;
+  color: #855305;
+  border-color: #b8860b;
+}
+
+.stamp-user {
+  background-color: #f5eef8;
+  color: #551a8b;
+  border-color: #7b4397;
+}
+
+.stamp-missing {
+  background-color: #fdeeee;
+  color: #990000;
+  border-color: #cc0000;
+}
+
+.stamp-exaggerated {
+  background-color: #fff2e0;
+  color: #b35900;
+  border-color: #e67300;
+}
+
+/* Archival seal effect */
+.archival-seal {
+  position: relative;
+  border: 3px dashed #8b2500;
+  padding: 12px;
+  background-color: rgba(139, 37, 0, 0.03);
+}
+
+/* Print export styling */
+@media print {
+  body {
+    background: #ffffff !important;
+    color: #000000 !important;
+  }
+  .no-print {
+    display: none !important;
+  }
+  .print-only {
+    display: block !important;
+  }
+  .retro-frame, .retro-frame-double {
+    border: 1px solid #000000 !important;
+    box-shadow: none !important;
+    background: #ffffff !important;
+  }
+}

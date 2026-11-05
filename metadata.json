@@ -1,0 +1,8 @@
+{
+  "name": "Remix CRAFT HERITAGE - Đề tài F05",
+  "description": "Hệ thống trực tuyến hỗ trợ biên soạn, quản lý và kiểm chứng hồ sơ sản phẩm thủ công truyền thống Việt Nam - Đề tài F05 FPT Polytechnic \u0026 IMTA TECH",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
